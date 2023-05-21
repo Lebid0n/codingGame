@@ -4,5 +4,5 @@ let clicksScore = 0;
 
 codingButton.addEventListener('click', function() {
     clicksScore++;
-    expirienceScore.textContent="Click:"+clicksScore;
+    expirienceScore.textContent="experience:"+clicksScore;
 })

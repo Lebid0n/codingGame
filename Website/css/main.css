@@ -1,4 +1,17 @@
-body {
-    background: rgb(5,16,20);
-    background: radial-gradient(circle, rgba(5,16,20,1) 30%, rgba(46,47,47,1) 100%);
+html {
+    height: 100%;
 }
+body {
+
+    
+    background: hsla(117, 100%, 96%, 1);
+
+    background: linear-gradient(90deg, hsla(117, 100%, 96%, 1) 0%, hsla(203, 33%, 86%, 1) 100%, hsla(203, 33%, 86%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(117, 100%, 96%, 1) 0%, hsla(203, 33%, 86%, 1) 100%, hsla(203, 33%, 86%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(117, 100%, 96%, 1) 0%, hsla(203, 33%, 86%, 1) 100%, hsla(203, 33%, 86%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EDFFEC", endColorstr="#CFDEE7", GradientType=1 );
+    
+}  
