@@ -1,8 +1,8 @@
-let codingButton = document.getElementById(codingButton);
-let expirience = document.getElementById(expirience);
+let codingButton = document.getElementById('codingButton');
+let expirienceScore = document.getElementById('experienceScore')
 let clicksScore = 0;
 
-codingButton.addEventListener('click', function() {
-    ++clicksScore;
-    expirience.textContent = 'experience:' + clicksScore;
-});
+document.getElementById('codingButton').onclick = function() {
+    clicksScore++;
+    document.querySelector('.experienceScore').innerHTML = clicksScore;
+}
