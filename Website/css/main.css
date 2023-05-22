@@ -2,7 +2,9 @@ html {
     height: 100%;
 }
 body {
+    font-family: cursive;
 
+    font-style: normal;
     
     background: hsla(117, 100%, 96%, 1);
 
@@ -12,6 +14,22 @@ body {
 
     background: -webkit-linear-gradient(90deg, hsla(117, 100%, 96%, 1) 0%, hsla(203, 33%, 86%, 1) 100%, hsla(203, 33%, 86%, 1) 100%);
 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EDFFEC", endColorstr="#CFDEE7", GradientType=1 );
-    
-}  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EDFFEC", endColorstr="#CFDEE7", GradientType=1 ); 
+} 
+
+@keyframes buttonColor {
+    0% { background-color: #F0FFF0; }
+    20% { background-color: #F5FFFA; }
+    40% { background-color: #F8F8FF; }
+    60% { background-color:  #FFFFE0; }
+    80% { background-color: #FFFFF0; }
+    100% { background-color: #F0FFF0; }
+}
+
+.codingButton {
+    border: none;
+    padding: 10px;
+    border-radius:  5px;
+
+    animation: buttonColor 6s infinite;
+}
