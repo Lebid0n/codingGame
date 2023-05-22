@@ -1,4 +1,4 @@
-html {
+html{
     height: 100%;
 }
 body {
@@ -27,9 +27,28 @@ body {
 }
 
 .codingButton {
+    display: flex;
+    justify-content: center;
+    align-self:center;
     border: none;
     padding: 10px;
     border-radius:  5px;
-
     animation: buttonColor 6s infinite;
+    font-size: 50px;
+    padding: 20px;
+    width: 400px;
+    
+}
+.buttonAndScore{
+    display: flex;
+    flex-direction: column;
+    
+}
+.experienceScore{
+    display: flex;
+    justify-content: center;
+}
+#img_1{
+    display:none;
+    height: 100px;
 }
