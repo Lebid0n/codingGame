@@ -12,7 +12,7 @@ codingButton.addEventListener('click', function() {
 conventor.addEventListener('click', function() {
   money = money + clicksScore;
   clicksScore = clicksScore - clicksScore;
-  money.textContent="money:"+money;
+  soldClick.textContent="money:"+money;
 })
 function myImg() {
   let elem = document.getElementById('img_1'); 
