@@ -4,9 +4,10 @@ let conventor = document.getElementById('conventor');
 let soldClick = document.getElementById('money')
 let clicksScore = 0;
 let money = 0;
+let multiplicator = 1;
 
 codingButton.addEventListener('click', function() {
-    clicksScore++;
+    clicksScore = clicksScore + multiplicator;
     expirienceScore.textContent="experience:"+clicksScore;
 })
 conventor.addEventListener('click', function() {
