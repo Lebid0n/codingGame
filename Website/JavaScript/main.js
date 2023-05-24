@@ -7,29 +7,25 @@ let clicksScore = 0;
 let money = 0;
 let multiplicator = 1;
 
-shop1Button.addEventListener('click', function() {
-  if (money < 100) {
-      alert('У вас недостаток средств.')
-    } else {
-      money = money - 100;
-      ++multiplicator;
-    }
-})
+
+function buyUpgrade(cost, multiplier) {
+  if (money >= cost) {
+    money -= cost;
+    multiplicator += multiplier;
+    document.getElementById('money').innerHTML = money;
+    soldClick.textContent="money:"+money;
+  } else {
+    alert("Недостаточно кликов!");
+  }
+}
 codingButton.addEventListener('click', function() {
     clicksScore = clicksScore + multiplicator;
+    document.getElementById("experienceScore").innerHTML = clicksScore;
     expirienceScore.textContent="experience:"+clicksScore;
 })
 conventor.addEventListener('click', function() {
   money = money + clicksScore;
   clicksScore = clicksScore - clicksScore;
   soldClick.textContent="money:"+money;
+  document.getElementById("experienceScore").innerHTML = clicksScore;
 })
-function myImg() {
-  let elem = document.getElementById('img_1'); 
-  let style = getComputedStyle(elem); 
-  if (style.display === 'none') {
-    document.getElementById('img_1').style.display='block';
-  } else if (style.display !== 'none') {
-    document.getElementById('img_1').style.display='none';
-  }
-}
