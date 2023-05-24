@@ -32,7 +32,7 @@ body {
     align-self:center;
     border: none;
     padding: 10px;
-    border-radius:  5px;
+    border-radius:  15px;
     animation: buttonColor 6s infinite;
     font-size: 50px;
     padding: 20px;
@@ -45,10 +45,40 @@ body {
     
 }
 .experienceScore{
+    color: #FFFF99;
     display: flex;
     justify-content: center;
 }
 #img_1{
     display:none;
     height: 100px;
+}
+.money {
+    color: #055E0E;
+}
+.conventor {
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    border: none;
+    padding: 10px;
+    border-radius:  15px;
+    animation: buttonColor 6s infinite;
+    font-size: 50px;
+    padding: 20px;
+    width: 400px;
+}
+.shop {
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, red, fuchsia);
+}
+.shop1Button {
+    padding: 20px;
+  letter-spacing: 0.2em;
+  border: 1px solid;
+  border-image: linear-gradient(20deg, #0ee038 38%, #034710 65%);
+  border-image-slice: 1;
+  border-radius: 15px;
 }
