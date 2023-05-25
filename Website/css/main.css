@@ -42,7 +42,6 @@ body {
 .buttonAndScore{
     display: flex;
     flex-direction: column;
-    
 }
 .experienceScore{
     color: #FFFF99;
@@ -72,13 +71,17 @@ body {
     color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image: linear-gradient(to right, red, fuchsia);
+	background-image: linear-gradient(to left, rgb(11, 136, 5), rgb(128, 227, 110));
 }
-.shop1Button {
+.shopStyle {
     padding: 20px;
-  letter-spacing: 0.2em;
-  border: 1px solid;
-  border-image: linear-gradient(20deg, #0ee038 38%, #034710 65%);
-  border-image-slice: 1;
-  border-radius: 15px;
+    letter-spacing: 0.2em;
+    border-image: linear-gradient(20deg, #0ee038 38%, #034710 65%);
+}
+.shopButton {
+    border: none;
+    background-color: #FFFF99;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 25px;
 }
